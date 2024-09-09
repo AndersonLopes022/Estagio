@@ -1,0 +1,29 @@
+def maior(v):
+    maior = v[0]
+    for i in range(len(v)):
+        if v[i] > maior:
+            maior = v[i]
+    return maior
+
+def menor(v):
+    menor = v[0]
+    for i in range(len(v)):
+        if v[i] < menor:
+            menor = v[i]
+    return menor
+
+def acimaMedia(v):
+    soma = 0
+    for i in range(len(v)):
+        soma += v[i]
+    media = soma / len(v)
+    cont = 0
+    for i in range(len(v)):
+        if v[i] > media:
+            cont += 1
+    return cont
+
+vetor = [165.00, 234.00, 123.00, 278.00, 145.00, 256.00]
+print("O maior valor e:", maior(vetor))
+print("O menor valor e:", menor(vetor))
+print("A quantidade de dias adima da media e:", acimaMedia(vetor))
