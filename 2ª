@@ -1,0 +1,12 @@
+def fib(n):
+    fibo = [0, 1]
+    while fibo[-1] < n:
+        proximo = fibo[-1] + fibo[-2]
+        fibo.append(proximo)
+    if fibo[-1] == n:
+        return "O numero esta na sequencia de fibonacci"
+    else:
+        return "O numero nao esta na sequencia de fibonacci"
+        
+n = 5
+print(fib(n))
