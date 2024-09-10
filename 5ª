@@ -1,0 +1,6 @@
+def inverter(string):
+  string_invertida = string[::-1]
+  return string_invertida
+  
+string = "Esta e a string ordenada"
+print()
