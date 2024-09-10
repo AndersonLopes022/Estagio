@@ -1,0 +1,11 @@
+def calcularPercentual(vetor):
+  total = 0
+  percentual = {}
+  for i in range(len(vetor)):
+    total += list(vetor.values())[i]
+  for i in range(len(vetor)):
+    percentual[list(vetor.keys())[i]] = (list(vetor.values())[i] / total) * 100
+  return percentual
+
+vetor = {"SP": 67836.43, "RJ": 36678.66, "MG": 29229.88, "ES": 27165.48, "Outros": 19849.53}
+print("Os percentuais de representação são:",calcularPercentual(vetor))
